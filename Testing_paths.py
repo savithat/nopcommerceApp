@@ -4,6 +4,7 @@ driver = webdriver.Chrome()
 driver.get("https://admin-demo.nopcommerce.com/")
 driver.maximize_window()
 user = driver.find_element_by_id("Email")
+
 user.clear()
 user.send_keys("admin@yourstore.com")
 
